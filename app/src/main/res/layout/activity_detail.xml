@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:text="Company"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_place"
+        app:layout_constraintStart_toEndOf="@+id/label_place"
+        tools:text="Army National Guard Units (Title 32)" />
+
+    <TextView
+        android:id="@+id/lable_type_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        app:layout_constraintStart_toStartOf="@+id/label_place"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/label_place" />
+
+    <TextView
+        android:id="@+id/text_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="PROGRAM ANALYST"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lable_type_job"
+        app:layout_constraintStart_toStartOf="@+id/text_place"
+        android:layout_marginStart="0dp" />
+
+    <TextView
+        android:id="@+id/label_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Date"
+        app:layout_constraintStart_toStartOf="@+id/lable_type_job"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/lable_type_job" />
+
+    <TextView
+        android:id="@+id/text_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="09/21/2017"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_open"
+        app:layout_constraintStart_toStartOf="@+id/text_job"
+        android:layout_marginStart="0dp" />
+
+    <TextView
+        android:id="@+id/label_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close Date"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/label_open"
+        app:layout_constraintStart_toStartOf="@+id/label_open"
+        android:layout_marginStart="0dp" />
+
+    <TextView
+        android:id="@+id/text_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        tools:text="01/31/2018"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_close"
+        app:layout_constraintStart_toStartOf="@+id/text_open" />
+
+    <TextView
+        android:id="@+id/label_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/label_close"
+        app:layout_constraintStart_toStartOf="@+id/label_close"
+        android:layout_marginStart="0dp" />
+
+    <TextView
+        android:id="@+id/text_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        tools:text="http://"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_url"
+        app:layout_constraintStart_toStartOf="@+id/text_close" />
+
+    <Button
+        android:id="@+id/button_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Share"
+        app:layout_constraintStart_toStartOf="@+id/text_url"
+        app:layout_constraintTop_toBottomOf="@+id/text_url" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
